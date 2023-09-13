@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="511.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="penjualan.FXMLDocumentController">
+    <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="511.0">
+        <menus>
+          <Menu fx:id="menuDisplay" mnemonicParsing="false" text="Display">
+            <items>
+              <MenuItem fx:id="displayCustomer" mnemonicParsing="false" onAction="#displayCustomerClick" text="Customer" />
+                  <MenuItem mnemonicParsing="false" text="Member" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+    </children>
+</AnchorPane>
