@@ -7,19 +7,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="penjualan.FXML_DisplayCustomerController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="penjualan.FXML_DisplayCustomerController">
    <children>
       <Label layoutX="246.0" layoutY="20.0" text="Display Customer">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TableView fx:id="tbvcust" layoutX="38.0" layoutY="50.0" prefHeight="301.0" prefWidth="525.0">
+      <TableView fx:id="tbvcust" layoutX="38.0" layoutY="50.0" prefHeight="265.0" prefWidth="525.0">
         <columns>
           <TableColumn prefWidth="75.0" text="C1" />
           <TableColumn prefWidth="75.0" text="C2" />
         </columns>
       </TableView>
+      <Button fx:id="btnAdd" layoutX="21.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnAddAct" text="Add" />
+      <Button fx:id="btnRemove" layoutX="76.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnRemoveAct" text="Remove" />
+      <Button fx:id="btnUpdate" layoutX="155.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnUpdateAct" text="Update" />
+      <Button fx:id="btnFirst" layoutX="409.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnFirstAct" text="|&lt;" />
+      <Button fx:id="btnPrev" layoutX="449.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnPrevAct" text="&lt;" />
+      <Button fx:id="btnNext" layoutX="490.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnNextAct" text="&gt;" />
+      <Button fx:id="btnLast" layoutX="524.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnLastAct" text="&gt;|" />
    </children>
 </AnchorPane>
